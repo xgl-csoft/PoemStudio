@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PoemGame</class>
+ <widget class="QMainWindow" name="PoemGame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>古诗答题 - PoemStudio</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../photos/b.jpg</normaloff>../photos/b.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="choose">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>60</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>选择</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+C</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="restart">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>470</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>重新开始</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+R</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>470</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>下一题</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+N</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="CA">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>330</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>未选择</string>
+    </property>
+    <property name="shortcut">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="CC">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>450</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>未选择</string>
+    </property>
+    <property name="shortcut">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="CB">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>390</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>未选择</string>
+    </property>
+    <property name="shortcut">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>591</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>当前古诗：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>540</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>正确率 0/0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="test">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>751</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>题目：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Q</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quit</sender>
+   <signal>clicked()</signal>
+   <receiver>PoemGame</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>555</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

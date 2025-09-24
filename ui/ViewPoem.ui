@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewPoem</class>
+ <widget class="QMainWindow" name="ViewPoem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>791</width>
+    <height>610</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>791</width>
+    <height>610</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>浏览古诗 - PoemStudio</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../photos/z.jpg</normaloff>../photos/z.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>791</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="l_title">
+       <property name="font">
+        <font>
+         <family>Microsoft Yi Baiti</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Microsoft Yi Baiti&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;古诗名称:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l_author">
+       <property name="minimumSize">
+        <size>
+         <width>789</width>
+         <height>57</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Microsoft Yi Baiti&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;古诗作者:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="ll">
+       <property name="maximumSize">
+        <size>
+         <width>789</width>
+         <height>57</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Microsoft Yi Baiti&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;原文:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextEdit" name="Show">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>190</y>
+      <width>791</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;
+background-color: rgb(255, 246, 226);</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="overwriteMode">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>150</y>
+      <width>141</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;退出浏览古诗&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Microsoft Yi Baiti&quot;;</string>
+    </property>
+    <property name="text">
+     <string>退  出</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Q</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ViewPoem</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>304</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

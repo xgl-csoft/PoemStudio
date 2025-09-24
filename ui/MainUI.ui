@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PoemStudioWin</class>
+ <widget class="QMainWindow" name="PoemStudioWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>771</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PoemStudio</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../photos/b.jpg</normaloff>../photos/b.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>651</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="Buttons">
+     <item>
+      <widget class="QCommandLinkButton" name="FindPoem">
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+        </font>
+       </property>
+       <property name="text">
+        <string notr="true">     古   诗   查   找</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCommandLinkButton" name="Game">
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+        </font>
+       </property>
+       <property name="text">
+        <string notr="true">     古   诗   答   题</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>651</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Welcome to PoemStudio!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>410</y>
+      <width>321</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 9pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(177, 177, 177);</string>
+    </property>
+    <property name="text">
+     <string>特别鸣谢:古诗文网 gushiwen.org</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="Tools">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>771</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Func">
+    <property name="title">
+     <string>功能(&amp;T)</string>
+    </property>
+    <addaction name="act_FindPoem"/>
+    <addaction name="separator"/>
+    <addaction name="act_Game"/>
+   </widget>
+   <widget class="QMenu" name="Help">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="act_About"/>
+    <addaction name="act_Help"/>
+    <addaction name="separator"/>
+    <addaction name="act_Quit"/>
+   </widget>
+   <addaction name="Func"/>
+   <addaction name="Help"/>
+  </widget>
+  <action name="act_FindPoem">
+   <property name="text">
+    <string>古诗查找(&amp;F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="act_Game">
+   <property name="text">
+    <string>古诗答题(&amp;G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="act_About">
+   <property name="text">
+    <string>关于PoemStudio...(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="act_Help">
+   <property name="text">
+    <string>帮助(&amp;U)</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="act_Quit">
+   <property name="text">
+    <string>退出(&amp;Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>act_Quit</sender>
+   <signal>triggered()</signal>
+   <receiver>PoemStudioWin</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
